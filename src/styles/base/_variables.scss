@@ -30,6 +30,9 @@ $btn-hover: #b81c2b;
 $link: #000;
 $link-hover: blue;
 
+$skew: skew(13deg);
+$negSkew: skew(-13deg);
+
 @font-face {
     font-family: 'ttlakescondensed-demibold';
     src: url('../../fonts/TTLakesCondensed-DemiBold.otf') format('opentype');

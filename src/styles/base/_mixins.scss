@@ -13,6 +13,13 @@
     -webkit-transform: translate(-50%, -50%);
 }
 
+@mixin horizontalCenter {
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
 @mixin flex {
     display: -webkit-box;
     display: -moz-box;
@@ -21,6 +28,15 @@
     display: flex;
 }
 
-@mixin letter-spacing {
-    letter-spacing: .035rem;
+@mixin skew {
+    transform: $skew;
+    -ms-transform: $skew;
+    -webkit-transform: $skew;
 }
+
+@mixin negSkew {
+    transform: $negSkew;
+    -ms-transform: $negSkew;
+    -webkit-transform: $negSkew;
+}
+

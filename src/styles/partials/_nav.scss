@@ -1,0 +1,124 @@
+﻿.header {
+    @extend .container;
+    position: relative;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__logo-container {
+    display: block;
+
+    img {
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+
+        @media #{$mq-medium} {
+            margin: 0;
+        }
+    }
+
+    @media #{$mq-medium} {
+        display: inline-block;
+    }    
+}
+
+.header__banner {
+    position: absolute;
+    bottom: -30px;
+    background-color: $darkNeutral;
+    color: $secondary;
+    padding: 10px 20px;
+    z-index: 999;
+    transform: skew(-30deg, 0deg);
+
+    h3 {
+        transform: skew(30deg); /* UNSKEW */
+    }
+}
+
+.header__right {
+    width: 100%;
+    height: 50px;
+    
+    @media #{$mq-medium} {
+        float: right;
+        width: 300px;
+    }
+}
+
+.header__fundraise {
+display: inline-block;
+
+    @media #{$mq-medium} {
+        margin: 40px 40px 0 0;
+        display: inline-block;
+    }
+}
+
+.hamburger {
+    z-index: 999;
+    cursor: pointer;
+    float: right;
+    width: 35px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.hamburger__bar1, .hamburger__bar2, .hamburger__bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: $btn;
+    margin: 6px 0;
+    transition: 0.25s;
+}
+
+.hamburger-close {
+    cursor: pointer;
+    background-color: $primary;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size:2rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 38px;
+    padding: 0 0 0 8px;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+      transform: skew(15deg);
+}
+
+.nav {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: -150px;
+    width: 0;
+    height: 650px;
+    background-color: $secondary;
+    padding: 30px;
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+      transform: skew(-15deg);
+      transition: all .25s ease-in-out;
+
+    a {
+        color: #fff;
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+          transform: skew(15deg);
+          font-size: 1.5rem;
+          span {
+              display: block;
+              font-size: .75rem;
+          }
+    }
+}
+
+.nav.nav-open {
+    width: 40vw;
+    transition: all .25s ease-in-out;
+}

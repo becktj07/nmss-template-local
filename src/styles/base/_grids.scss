@@ -1,0 +1,105 @@
+﻿//Flexbox Classes
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-flow: row wrap;
+}
+
+.grid-wrapper {
+    @extend .container;
+    @extend .flex-container;
+}
+
+.grid-image-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid-item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+        margin: 0;
+    }
+
+    @media #{$mq-medium} {
+        margin: 0;
+    }
+}
+
+/*-----------------------------
+ Two Columns
+ ------------------------------*/
+.two-col-item {
+    @extend .grid-item;
+
+    @media #{$mq-medium} {
+        flex-basis: 48%;
+    }
+}
+
+/*-----------------------------
+ Three Columns
+ ------------------------------*/
+.three-col-item {
+    @extend .grid-item;
+
+    @media #{$mq-medium} {
+        flex-basis: 31.333%;
+    }
+}
+
+/*-----------------------------
+ Three Columns w/ more than 1 row
+ ------------------------------*/
+.three-col-item--rows {
+    @extend .grid-item;
+
+    @media #{$mq-small} {
+        flex-basis: 48%;
+    }
+
+    @media #{$mq-medium} {
+        flex-basis: 31.333%;
+    }
+}
+
+/*-----------------------------
+ Four Columns
+ ------------------------------*/
+.four-col-item {
+    @extend .grid-item;
+
+    @media #{$mq-small} {
+        flex-basis: 48%;
+    }
+
+    @media #{$mq-medium} {
+        flex-basis: 23.5%;
+    }
+}
+
+
+/*-----------------------------
+ Five Columns
+ ------------------------------*/
+.five-col-item {
+    @extend .grid-item;
+
+
+    @media #{$mq-small} {
+        font-size: .8rem;
+        flex-basis: 20%;
+    }
+
+    @media #{$mq-medium} {
+        font-size: 1rem;
+        flex-basis: 20%;
+    }
+}

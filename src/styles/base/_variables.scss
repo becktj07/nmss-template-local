@@ -1,0 +1,50 @@
+﻿/* Breakpoints */
+$mq-xsmall: "only screen and (min-width:400px)";
+$mq-small-width: 400px;
+$mq-small: "only screen and (min-width:480px)";
+$mq-small-width: 480px;
+$mq-medium: "only screen and (min-width:768px)";
+$mq-medium-width: 768px;
+$mq-large: "only screen and (min-width:992px)";
+$mq-large-width: 992px;
+$mq-xlarge: "only screen and (min-width:1200px)";
+$mq-xlarge-width: 1200px;
+$mq-xxlarge: "only screen and (min-width:1500px)";
+$mq-xxlarge-width: 1500px;
+
+// To use... @media #{variable}
+
+/* Colors */
+$primary: #fe7d1f;
+$darkPrimary: #f06f16;
+$secondary: #007582; //Brand Blue
+$lightSecondary: #00adbc;
+$neutral: #61594f;
+$lightNeutral: #f5f3ef;
+$darkNeutral: #2d2a26;
+$body-font-color: #000000;
+
+$btn: #cc3f10; //Primary Brand Color;
+$btn-hover: #b81c2b;
+
+$link: #000;
+$link-hover: blue;
+
+@font-face {
+    font-family: 'ttlakescondensed-demibold';
+    src: url('../../fonts/TTLakesCondensed-DemiBold.otf') format('opentype');
+}
+
+/* fonts */
+$body-font: 'Open Sans', Arial, sans-serif;
+$heading-font: 'Open Sans', Arial, sans-serif;
+$heading-font-bold: 'Open Sans', Arial, sans-serif;
+
+/*font-sizes*/
+$font-xsmall: 0.75rem; //12
+$font-small: 0.875rem; //14
+$font-medium: 1.25rem; //20
+$font-large: 1.75rem; //28
+$font-xlarge: 2.5rem; //40
+$font-xxxlarge: 4.375em; //70
+$font-button: 1.25rem; //20

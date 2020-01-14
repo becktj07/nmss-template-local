@@ -1,0 +1,127 @@
+.hero-container {
+    display: flex;
+    height: 550px;
+}
+
+.overlay-container {
+    z-index: 99;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.overlay-container__text-overlay {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+
+        span {
+            display: inline-block;
+            font-size: 1rem;
+        }
+    }
+}
+
+.slider {
+    
+    &:nth-of-type(1) { 
+        background: red;
+    }
+    &:nth-of-type(2) { 
+        background: violet;
+        background-image: url('https://theheathhouse.co.uk/wp-content/uploads/2017/01/HH-Open-Day-055-1400x550.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    &:nth-of-type(3) { 
+        background: orange; 
+    }
+
+    overflow: hidden;
+    z-index: 1;
+    filter: grayscale(100%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 20%;
+    transition: flex-basis 250ms ease-in-out;
+    text-align: center;
+
+    &:hover {
+        flex-basis: 80%;
+        filter: grayscale(0);
+
+        .slider__event-location {
+            display: none;
+        }
+        .slider__event-details {
+            opacity: 1;
+            transition: all .25s ease-in-out;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%) skew(-15deg);
+            -ms-transform: translateX(-50%) skew(-15deg);
+            -webkit-transform: translateX(-50%) skew(-15deg);
+        }
+    }
+}
+
+.slider__event-location {
+    position: absolute;
+    bottom: 50px;
+    font-size: 2rem;
+    color: #fff;
+    padding: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.slider__event-details {
+    padding: 20px;
+    width: 90%;
+    max-width: 550px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid $lightSecondary;
+    text-align: left;
+    opacity: 0;
+    position: absolute;
+    bottom: -100px;
+    left:50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+
+    h2 {
+        color: $secondary;
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+          transform: skew(15deg);
+    }
+
+    h3 {
+        color: #000;
+        font-weight: bold;
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+          transform: skew(15deg);
+    }
+
+    h4 {
+        -webkit-transform: skew(15deg);
+        -moz-transform: skew(15deg);
+          transform: skew(15deg);
+    }
+}

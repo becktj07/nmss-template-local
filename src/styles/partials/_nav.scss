@@ -99,7 +99,7 @@ display: inline-block;
     background-color: $secondary;
     padding: 30px;
     @include negSkew;
-      transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 
     a {
         color: #fff;

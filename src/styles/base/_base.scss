@@ -30,8 +30,16 @@ body {
     margin: 0 auto;
 }
 
+.container--1200 {
+    @extend .container;
+    position: relative;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .text-center {
-    text-align:center;
+    text-align: center;
 }
 
 .text-left {
@@ -40,23 +48,12 @@ body {
 
 a {
     display: inline-block;
-    cursor:pointer!important;
+    cursor: pointer!important;
     text-decoration: none;
     color: $primary;
 
     &:hover {
         color: $link-hover;
-    }
-}
-
-h2 {
-    font-family: $heading-font;
-    font-size: 2rem;
-    line-height: 2.1rem;
-
-    @media #{$mq-medium} {
-        font-size: 2.5rem;
-        line-height: 2.8rem;
     }
 }
 
@@ -78,50 +75,44 @@ p {
 
 .btn-wrapper {
     display: inline-block;
-    width:100%;
+    width: 100%;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 1.875rem;
-    padding: .75rem 2.3rem;
+    display: block;
+    padding: .75rem 1.5rem;
     font-size: 1rem;
     background: $btn;
     color: #fff;
-    border: none;
-    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #fff;
+    font-family: $body-font;
     letter-spacing: 1px;
-    text-transform: uppercase;
     text-align: center;
-    border-radius: 0.5rem;
     font-weight: 900!important;
     text-decoration: none;
-
-    @media #{$mq-medium} {
-        padding: 1rem 3rem;
-        font-size: 1.25rem;
-    }
+    margin: 0 auto;
+    width: fit-content;
 
     &:hover {
         background: $btn-hover;
         color: #fff;
     }
-
-    &[disabled] {
-        cursor: auto;
-
-        &:hover {
-            background: $btn;
-        }
-    }
 }
 
 //Helpers
-.text-white {
+.white {
     color:#fff;
 }
 
-.padding-top-bottom--1rem{
+.primary {
+    color: $primary;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.padding-top-bottom--1rem {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -137,6 +128,19 @@ p {
 .padding-left-right--1rem {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.padding-top-bottom--30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.padding-top--50 {
+    padding-top: 40px;
+
+    @media #{$mq-medium} {
+        padding-top: 50px;
+    }
 }
 
 .padding-top-bottom--70 {
@@ -312,4 +316,9 @@ button {
     @media #{$mq-medium} {
         display: block;
     }
+}
+
+//full width backgrounds
+.gray-background {
+    background-color: $darkNeutral;
 }

@@ -1,117 +1,78 @@
 ﻿
-#footer {
+.footer {
     padding: 40px 0;
-    background-color: #000;
-    color: #fff;
-    font-size: 19px;
+    color: #fff;    
+
+    h5 {
+        font-weight: normal;
+    }
+}
+
+.footer__flex {
 
     @media #{$mq-medium} {
-        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
     }
+}
 
-    .list-header {
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        font-weight: 800;
-        padding: 0;
-    }
+.footer__ms-logo {
+    margin-bottom: 20px;
 
-    .two-col-item {
-
-        &:nth-child(1) {
-            margin-bottom: 30px;
-        }
-
-        @media #{$mq-medium} {
-            &:nth-child(1) {
-                margin-bottom: 0px;
-            }
-        }
-
-        ul {
-            border-top: 1px solid #fff;
-            list-style-type: none;
-            padding-left: 0;
-            padding-top: 15px;
-            margin: 0;
-
-            li {
-                padding: 8px 0;
-
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
-
-    #footer__corteva-logo {
+    img {
         display: block;
-        width: 170px;
+        width: 300px;
         margin: 0 auto;
-
-        @media #{$mq-medium} {
-            display: inline-block;
-            margin: 0;
-        }
     }
 
-    #footer__social-icons {
+    @media #{$mq-medium} {
+        margin: 0;
+        padding-top: 15px;
+    }
+}
+
+.footer__event-logos {
+    margin: 0 auto;
+    text-align: center;
+
+    span {
         display: block;
-        width: 230px;
-        margin: 20px auto 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
 
         @media #{$mq-medium} {
-            display: inline-block;
-            margin: 0;
-            float: right;
-        }
-
-        a {
-            display: inline-block;
+            text-align: left;
         }
     }
 
-    #footer-legal {
-        font-size: .9rem;
-        text-align: center;
-        margin: 0 0 10px 0;
-        line-height: 1.1rem;
+    @media #{$mq-medium} {
+        margin: 0;
     }
+}
 
-    #footer-legal-links {
-        font-size: .9rem;
+.footer__link-list {
+    margin-bottom: 2rem;
+
+    ul {
         text-align: center;
         list-style: none;
 
         li {
-            padding: 5px 4px;
+            display: inline-block;
+            border-right: 1px solid #fff;
 
-            @media #{$mq-medium} {
-                display: inline;
-                position: relative;
-                padding: 0px 8px;
+            a {
+                color: #fff;
+                padding: 0px 12px;
+                font-size: 1.15rem;
 
-                &:after {
-                    position: absolute;
-                    bottom: 2px;
-                    right: -2px;
-                    content: '';
-                    height: 13px;
-                    width: 1px;
-                    background-color: $neutral;
-                }
-
-                &:last-of-type {
-                    &:after {
-                        display: none;
-                    }
+                &:hover {
+                    text-decoration: underline;
                 }
             }
 
-            a {
-                display: inline-block;
-                color: #fff;
+            &:last-of-type {
+                border-right: none;
             }
         }
     }

@@ -22,6 +22,16 @@
     img {
         max-width: 100%;
     }
+
+    .slick-prev.slick-arrow {
+        left: 2rem;
+        z-index: 1;
+    }
+
+    .slick-next.slick-arrow {
+        right: 2rem;
+        z-index: 1;
+    }
 }
 
 .slide-overlay {

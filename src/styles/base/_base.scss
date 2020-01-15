@@ -30,6 +30,12 @@ body {
     margin: 0 auto;
 }
 
+.container--850 {
+    @extend .container;
+    position: relative;
+    max-width: 850px;
+}
+
 .container--1200 {
     @extend .container;
     position: relative;
@@ -128,6 +134,10 @@ p {
 .padding-left-right--1rem {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.padding-top--30 {
+    padding-top: 30px;
 }
 
 .padding-top-bottom--30 {

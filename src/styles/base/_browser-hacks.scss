@@ -2,83 +2,11 @@
 /*Edge and 11*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
-    .gray-blocks-background {
-        background-image: url(../../img/overlay-pattern-gray-blocks.jpg);
-    }
-
-    .red-blocks-background {
-        background-image: url(../../img/overlay-pattern-red-blocks.jpg);
-    }
-
-    .red-blocks-tall-background {
-        background-image: url('../../img/overlay-pattern-red-blocks-tall.jpg');
-    }
-
-    .red-blocks-half-width {
-        background-image: url(../../img/overlay-pattern-red-blocks.jpg);
-    }
-
-    .navbar__inner {
-        max-width:none;
-        justify-content:flex-start;
-    }
-
-    .featured-slider .slick-prev {
-        left: -55px;
-    }
-
-    .featured-slider .slick-next {
-        right: -55px;
-    }
-
-    .featured-slider .slick-prev, .featured-slider .slick-next {
-        height:86px;
-    }
-
-    .testimonial-slider .slick-prev, .testimonial-slider .slick-next {
-        height: 86px;
-    }
-
-    .featured-slider__slide {
-        img {
-            width:100%;
-        }
-    }
-
-    .card-grid--check {
-        .three-col-item {
-            flex-basis: 25%;
-        }
-    }
-
-    .navbar__nav-search-container {
-        left:-280px!important;
-    }
-
-    .checkbox-list-indent {
-        input[type='checkbox'] {
-            display:inline-block;
-            width:14px;
-        }        
-    }
-
-    .contact-disclaimer--checkbox {
-        input[type='checkbox'] {
-            display: inline-block;
-            width: 14px;
-        }
-    }
-
-    .productFinder input[type=search] {
-        line-height:22px!important;
-    }
 }
 
 /*IE and above 768*/
 @media all and (-ms-high-contrast: none) and (min-width: 768px) {
-    .two-col-item {
-        flex-basis: 42%;
-    }
+
 }
 
 

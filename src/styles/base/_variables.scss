@@ -33,21 +33,7 @@ $link-hover: blue;
 $skew: skew(13deg);
 $negSkew: skew(-13deg);
 
-@font-face {
-    font-family: 'ttlakescondensed-demibold';
-    src: url('../../fonts/TTLakesCondensed-DemiBold.otf') format('opentype');
-}
-
 /* fonts */
-$body-font: 'Open Sans', Arial, sans-serif;
-$heading-font: 'Open Sans', Arial, sans-serif;
-$heading-font-bold: 'Open Sans', Arial, sans-serif;
-
-/*font-sizes*/
-$font-xsmall: 0.75rem; //12
-$font-small: 0.875rem; //14
-$font-medium: 1.25rem; //20
-$font-large: 1.75rem; //28
-$font-xlarge: 2.5rem; //40
-$font-xxxlarge: 4.375em; //70
-$font-button: 1.25rem; //20
+$body-font: 'Source Sans Pro', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+$heading-font-bold: 'Montserrat', sans-serif;

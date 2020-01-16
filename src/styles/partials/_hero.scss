@@ -21,18 +21,27 @@
     width: 100%;
     text-transform: uppercase;
 
-    h1 {
-        color: $primary;
-        text-align: center;
-        font-size: 6rem;
-
-        span {
-            display: inline-block;
-            font-size: 2rem;
-            color: #fff;
-            text-align: left;
-        }
+    img {
+        margin: 0 auto;
+        display: block;
     }
+
+    // h1 {
+    //     color: $primary;
+    //     text-align: center;
+    //     font-size: 170px;
+    //     font-family: $heading-font-bold;
+    //     text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+
+    //     span {
+    //         font-family: $body-font;
+    //         font-weight: 400;
+    //         display: inline-block;
+    //         font-size: 55px;
+    //         color: #fff;
+    //         text-align: left;
+    //     }
+    // }
 }
 
 .slider {
@@ -69,16 +78,13 @@
     justify-content: center;
     align-items: center;
     flex: 1 1 20%;
-    transition: flex-basis 250ms ease-in-out;
+    transition: flex-basis .25s ease-in-out;
     text-align: center;
 
     &:hover {
         flex-basis: 80%;
         filter: grayscale(0);
 
-        .slider__event-location {
-            display: none;
-        }
         .slider__event-details {
             z-index: 990;
             opacity: 1;
@@ -99,10 +105,37 @@
     transform: translateX(-50%) $skew;
     -ms-transform: translateX(-50%) $skew;
     -webkit-transform: translateX(-50%) $skew;
+    font-family: $heading-font-bold;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+
+    span {
+        font-size: 1.5rem;
+        position: relative;
+        right: 3px;
+        bottom:3px;
+        letter-spacing: 2px;
+    }
+}
+
+.location-hover {
+    font-size: 1.25rem;
+    bottom: 20px;
+    right: 0;
+    transition: all .25s ease-in-out;
+}
+
+.location-hover--sf {
+    @extend .location-hover;
+    right: -30px;
+}
+
+.hide {
+    display: none;
 }
 
 .slider__event-details {
-    padding: 20px;
+    padding: 10px 30px;
     width: 90%;
     max-width: 550px;
     background-color: rgba(255, 255, 255, 0.85);
@@ -114,17 +147,31 @@
     @include horizontalCenter;
 
     h2 {
+        padding-left: 5px;
+        font-size:2.75rem;
         color: $secondary;
         @include skew;
+        font-family: $heading-font-bold;
+        text-transform: uppercase;
     }
 
     h3 {
+        padding-left: 15px;
         color: #000;
         font-weight: bold;
+        font-size: 1.25rem;
         @include skew;
     }
 
     h4 {
+        font-weight: 400;
+        padding-left: 21px;
         @include skew;
+        color: #000;
+        font-size: 1.25rem;
+
+        &:hover {
+            color: #000;
+        }
     }
 }

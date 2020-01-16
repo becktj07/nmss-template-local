@@ -26,14 +26,16 @@
 
 .header__banner {
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
     background-color: $darkNeutral;
-    color: $secondary;
     padding: 10px 20px;
     z-index: 9;
     transform: skew(-13deg, 0deg);
 
     h3 {
+        color: $lightSecondary;
+        text-transform: uppercase;
+        font-weight: 400;
         transform: skew(13deg); /* UNSKEW */
     }
 }
@@ -49,11 +51,20 @@
 }
 
 .header__fundraise {
-display: inline-block;
-
+    display: inline-block;
+    
     @media #{$mq-medium} {
         margin: 40px 40px 0 0;
         display: inline-block;
+    }
+
+    a {
+        font-weight: 700;
+        color: #443b2f;
+
+        &:hover {
+            color: #443b2f;
+        }
     }
 }
 
@@ -63,7 +74,7 @@ display: inline-block;
     float: right;
     width: 35px;
     height: 40px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .hamburger__bar1, .hamburger__bar2, .hamburger__bar3 {
@@ -84,9 +95,10 @@ display: inline-block;
     font-size:2rem;
     font-weight: bold;
     color: #fff;
-    line-height: 38px;
-    padding: 0 0 0 8px;
+    line-height: 36px;
+    padding: 0 0 0px 9px;
     @include skew;
+    margin-left: 190px;
 }
 
 .nav {
@@ -95,25 +107,56 @@ display: inline-block;
     top: 0;
     right: -150px;
     width: 0;
-    height: 650px;
+    height: 660px;
     background-color: $secondary;
+    border: 2px solid $lightSecondary;
     padding: 30px;
     @include negSkew;
     transition: all .25s ease-in-out;
 
+    ul {
+        padding-top: 2.5rem;
+        padding-right: 1.75rem;
+    }
+
+    li {
+        margin-bottom: 1rem;
+
+        &:nth-of-type(1) {
+            margin-left:60px;
+        }
+        &:nth-of-type(2) {
+            margin-left:160px;
+        }
+        &:nth-of-type(3) {
+            margin-left:160px;
+        }
+        &:nth-of-type(4) {
+            margin-left:180px;
+        }
+        &:nth-of-type(5) {
+            margin-left:200px;
+        }
+    }
+
     a {
         color: #fff;
         @include skew;
-        font-size: 1.5rem;
+        font-size: 1.875rem;   
+        text-align: right;
+        text-transform: uppercase;
+        font-weight: 400;
 
           span {
               display: block;
-              font-size: .75rem;
+              font-size: 1.3rem;
+              line-height: 1rem;
+              text-transform: none;
           }
     }
 }
 
 .nav.nav-open {
-    width: 650px;
+    width: 500px;
     transition: all .25s ease-in-out;
 }

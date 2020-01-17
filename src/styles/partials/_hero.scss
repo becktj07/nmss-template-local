@@ -1,29 +1,52 @@
 .hero-container {
     display: flex;
-    height: 550px;
+    height: 300px;
     width: calc(100% + 150px);
     margin-left: -75px;
     margin-right: -75px;
+
+    @media #{$mq-large} {
+        height: 550px;
+    }
 }
 
 .overlay-container {
     z-index: 99;
     width: 100%;
-    height: 400px;
+    height: 220px;
     position: absolute;
-    top: 100px;
+    top: 150px;
     @include horizontalCenter;
+
+    @media #{$mq-medium} {
+        top: 100px;
+    }
+
+    @media #{$mq-large} {
+        height: 350px;
+        top: 110px;
+    }    
+
+    @media #{$mq-large} {
+        height: 400px;
+    }
 }
 
 .overlay-container__text-overlay {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     width: 100%;
     text-transform: uppercase;
 
+    @media #{$mq-large} {
+        bottom: 60px;
+    }
+
     img {
+        padding: 0 20px;
         margin: 0 auto;
         display: block;
+        max-width: 100%;
     }
 
     // h1 {
@@ -45,29 +68,6 @@
 }
 
 .slider {
-
-    &:nth-of-type(1) { 
-        background: red;
-    }
-    &:nth-of-type(2) { 
-        background: violet;
-
-        &:after {
-            z-index: -1;
-            position: absolute;
-            content: '';
-            background-image: url(https://theheathhouse.co.uk/wp-content/uploads/2017/01/HH-Open-Day-055-1400x550.jpg);
-            background-size: cover;
-            background-position:center;
-            width: 130%;
-            height: 100%;
-            @include skew;
-        }
-    }
-    &:nth-of-type(3) { 
-        background: orange; 
-    }
-
     @include negSkew;
     overflow: hidden;
     z-index: 1;
@@ -77,7 +77,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1 1 20%;
+    flex: 1 1 33.3%;
     transition: flex-basis .25s ease-in-out;
     text-align: center;
 
@@ -85,21 +85,35 @@
         flex-basis: 80%;
         filter: grayscale(0);
 
-        .slider__event-details {
-            z-index: 990;
-            opacity: 1;
-            transition: all .25s ease-in-out;
-            bottom: 0px;
-            left: 50%;
-            @include horizontalCenter;
+        @media #{$mq-large} {
+            .slider__event-details {
+                z-index: 990;
+                opacity: 1;
+                transition: all .25s ease-in-out;
+                bottom: 0px;
+                left: 50%;
+                @include horizontalCenter;
+            }
         }
+    }
+
+    &:after {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        background-image: url(https://theheathhouse.co.uk/wp-content/uploads/2017/01/HH-Open-Day-055-1400x550.jpg);
+        background-size: cover;
+        background-position:center;
+        width: 130%;
+        height: 100%;
+        @include skew;
     }
 }
 
 .slider__event-location {
     position: absolute;
-    bottom: 50px;
-    font-size: 2rem;
+    bottom: 20px;
+    font-size: 1rem;
     color: #fff;
     padding: 0px;
     transform: translateX(-50%) $skew;
@@ -109,12 +123,29 @@
     text-transform: uppercase;
     transition: all .25s ease-in-out;
 
-    span {
+    @media #{$mq-medium} {
         font-size: 1.5rem;
+    }
+
+    @media #{$mq-xlarge} {
+        font-size: 2rem;
+        bottom: 50px;
+    }
+
+    span {
+        font-size: 1rem;
         position: relative;
         right: 3px;
         bottom:3px;
         letter-spacing: 2px;
+
+        @media #{$mq-xlarge} {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media #{$mq-large} {
+        display: block;
     }
 }
 
@@ -123,6 +154,10 @@
     bottom: 20px;
     right: 0;
     transition: all .25s ease-in-out;
+
+    span {
+        font-size: 1rem;
+    }
 }
 
 .location-hover--sf {

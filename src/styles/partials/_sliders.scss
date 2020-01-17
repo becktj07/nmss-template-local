@@ -61,6 +61,14 @@
     position: relative;
     z-index: 0;
 
+    img {
+        padding: 0 4.5rem;
+
+        @media #{$mq-large} {
+            padding: 0;
+        }
+    }
+
     .slick-prev.slick-arrow {
         left: 2rem;
         z-index: 1;
@@ -99,56 +107,85 @@
         }
     }
 }
+//mobile
+.slide-overlay--mobile {    
+    border: 1px solid $primary;
+    border-right: none;
+    background-color: $secondary;
+    color: #fff;
+    z-index: 99;
 
+    @media #{$mq-large} {
+        display: none;
+    }
+}
+
+.slide-overlay--mobile-top {
+    @extend .slide-overlay--mobile;
+    text-transform: uppercase;
+    padding: 1.5rem 1.5rem 1.5rem 8rem;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/mobile-slider-top.png');
+        right: 0;
+        top: -1px;
+        width: 51px;
+        height: 70px;
+        background-size: 100%;
+    }
+}
+
+.slide-overlay--mobile-bottom {
+    @extend .slide-overlay--mobile;
+    text-transform: uppercase;
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    position: relative;
+    width: 100%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url('../images/mobile-slider-bottom.png');
+        left: 0;
+        top: -1px;
+        width: 51px;
+        height: 69px;
+        background-size: 100%;
+    }
+}
+
+//desktop
 .slide-overlay {
-    padding: 1.5rem;
+    display: none;
     border: 1px solid $primary;
     background-color: $secondary;
     color: #fff;
     z-index: 99;
+
+    @media #{$mq-large} {
+        display: block;
+    }
 }
 
 .slide-overlay--top {
     @extend .slide-overlay;
+    font-size: 2.5rem;
     text-transform: uppercase;
-
-    @media #{$mq-medium} {
-        padding: 1.5rem 1.5rem 1.5rem 3rem;
-        position: absolute;
-        top: 0;
-        left: -30px;
-        transform: skew(-45deg);
-        -ms-transform: skew(-45deg);
-        -webkit-transform: skew(-45deg);
-    }
-
-    span {
-        display: block;
-        transform: skew(45deg);
-        -ms-transform: skew(45deg);
-        -webkit-transform: skew(45deg);
-    }
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    position: absolute;
+    top: 0;
+    left: -30px;
 }
 
 .slide-overlay--bottom {
     @extend .slide-overlay;
-
-    @media #{$mq-medium} {
-        padding: 1.5rem 3rem 1.5rem 1.5rem;
-        position: absolute;
-        bottom: 0;
-        right: -30px;
-        transform: skew(-45deg);
-        -ms-transform: skew(-45deg);
-        -webkit-transform: skew(-45deg);
-    }
-
-    span {
-        display: block;
-        transform: skew(45deg);
-        -ms-transform: skew(45deg);
-        -webkit-transform: skew(45deg);
-    }
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: -30px;
 }
 
 .slider--multiple {

@@ -1,28 +1,48 @@
 .heading--70 {
     font-family: $heading-font-bold;
     font-weight: 700;
-    font-size: 4.375rem;
+    font-size: 2rem;
+    line-height: 2rem;
     text-transform: uppercase;
-    line-height: 4.375rem;
+
+    @media #{$mq-medium} {
+        font-size: 4.375rem;
+        line-height: 4.375rem;
+    }
 }
 
 .heading--80 {
     font-family: $heading-font-bold;
-    font-size: 5rem;
     text-transform: uppercase;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+
+    @media #{$mq-medium} {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
 }
 
 .heading--50 {
     font-family: $heading-font;
-    font-size: 3.125rem;
+    font-size: 2rem;
+    line-height: 2rem;
     text-transform: uppercase;
+
+    @media #{$mq-medium} {
+        font-size: 3.125rem;
+        line-height: 3.125rem;
+    }
 }
 
 .heading--44 {
     font-family: $heading-font;
-    font-size: 2.75rem;
+    font-size: 2rem;
     text-transform: uppercase;
+
+    @media #{$mq-medium} {
+        font-size: 2.75rem;
+    }
 }
 
 .heading--37 {

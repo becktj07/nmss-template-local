@@ -1,4 +1,5 @@
 .numbers-section {    
+    margin-top: 3rem;
 
     @media #{$mq-medium} {
         margin-top: 6.875rem;
@@ -14,10 +15,18 @@
 
 .numbers-section__number {
     color: $secondary;
-    font-size: 5.3125rem;
+    font-size:3.5rem;
+
+    @media #{$mq-medium} {
+        font-size: 5.3125rem;
+    }
 }
 
 .numbers-section__caption {
     color: #fff;
-    font-size: 2.3125rem
+    font-size: 1.75rem;
+
+    @media #{$mq-medium} {
+        font-size: 2.3125rem
+    }
 }

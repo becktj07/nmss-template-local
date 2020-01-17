@@ -15,8 +15,9 @@
         display: block;
 
         @media #{$mq-medium} {
-            margin: 0;
-        }
+            display: inline-block;
+            width: 300px;
+        }    
     }
 
     @media #{$mq-medium} {
@@ -26,11 +27,17 @@
 
 .header__banner {
     position: absolute;
-    bottom: -40px;
+    bottom: -60px;
     background-color: $darkNeutral;
     padding: 10px 20px;
     z-index: 9;
     transform: skew(-13deg, 0deg);
+    width: 90%;
+
+    @media #{$mq-medium} {
+        bottom: -40px;
+        width: auto;
+    }
 
     h3 {
         color: $lightSecondary;
@@ -52,10 +59,12 @@
 
 .header__fundraise {
     display: inline-block;
+    padding: 10px;
     
     @media #{$mq-medium} {
         margin: 40px 40px 0 0;
         display: inline-block;
+        padding: 0px;
     }
 
     a {
@@ -74,7 +83,10 @@
     float: right;
     width: 35px;
     height: 40px;
-    margin-top: 25px;
+
+    @media #{$mq-medium} {
+        margin-top: 25px;
+    }
 }
 
 .hamburger__bar1, .hamburger__bar2, .hamburger__bar3 {
@@ -107,12 +119,16 @@
     top: 0;
     right: -150px;
     width: 0;
-    height: 660px;
+    height: 680px;
     background-color: $secondary;
     border: 2px solid $lightSecondary;
     padding: 30px;
     @include negSkew;
     transition: all .25s ease-in-out;
+
+    @media #{$mq-medium} {
+        height: 660px;
+    }
 
     ul {
         padding-top: 2.5rem;
@@ -126,13 +142,13 @@
             margin-left:60px;
         }
         &:nth-of-type(2) {
-            margin-left:160px;
+            margin-left:110px;
         }
         &:nth-of-type(3) {
-            margin-left:160px;
+            margin-left:130px;
         }
         &:nth-of-type(4) {
-            margin-left:180px;
+            margin-left:100px;
         }
         &:nth-of-type(5) {
             margin-left:200px;

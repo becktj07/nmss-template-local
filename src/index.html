@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900&display=swap" rel="stylesheet"> -->
 		<link rel="stylesheet" href="styles/main.css">
 		<title>Index</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -113,26 +114,38 @@
 					</div>				
 				</div>
 			</section>
-			<section class="container--1200 padding-top-bottom--70">
-				<div class="slider--overlays">
+			<section class="container--1200--no-padding padding-top-bottom--70">
+				<div class="slider--overlays">					
 					<div class="slider--overlays__slide">
+						<div class="slide-overlay--mobile-top">
+							<span>The em unit is relative to the font-size of the parent, which causes the compounding issue.</span> 
+						</div>
 						<div class="slide-overlay--top">
-							<span>overlay</span>
+							<span>overlay top</span>
 						</div>
 						<img src="https://placehold.it/1200x700" />
 						<div class="slide-overlay--bottom">
 							<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span>
 						</div>
-					</div>
+						<div class="slide-overlay--mobile-bottom">
+								<span>test</span> 
+						</div>
+					</div>					
 					<div class="slider--overlays__slide">
-						<div class="slide-overlay--top">
-							<span>overlay</span>
-						</div>
-						<img src="https://placehold.it/1200x700" />
-						<div class="slide-overlay--bottom">
-							<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span>
-						</div>
-					</div>			
+							<div class="slide-overlay--mobile-top">
+								<span>mobile top</span> 
+							</div>
+							<div class="slide-overlay--top">
+								<span>overlay top</span>
+							</div>
+							<img src="https://placehold.it/1200x700" />
+							<div class="slide-overlay--bottom">
+								<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span>
+							</div>
+							<div class="slide-overlay--mobile-bottom">
+									<span>test</span> 
+							</div>
+						</div>			
 				</div>				
 			</section>			
 			<section class="gray-background padding-top-bottom--70">
@@ -154,7 +167,7 @@
 				<div class="container">
 					<div class="numbers-section">
 						<h3 class="numbers-section__caption">At least</h3>
-						<h2 class="numbers-section__number" style="display: inline;">2,200</h2>
+						<h2 class="numbers-section__number">2,200</h2>
 						<img src="images/smiles-icon.png" style="display: inline;" />
 						<h3 class="numbers-section__caption">smiles at top</h3>
 					</div>

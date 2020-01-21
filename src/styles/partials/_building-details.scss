@@ -1,0 +1,42 @@
+.building-details {
+    
+    img { 
+        max-width: 100%;
+    }
+
+    .heading--80 {
+        margin-bottom: 1.5rem;
+    }
+
+    .heading--44 {
+        margin-top: .5rem;
+
+        @media #{$mq-large} {
+            margin-bottom: -.5rem;
+        }
+    }
+
+    .building-name {
+        @extend .heading--44; 
+        color: $secondary;
+        font-weight: 500;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .building-name--sf {
+        @extend .heading--44; 
+        color: $secondary;
+        font-weight: 500;
+        padding-top: 0;
+        margin-top: 0;
+
+        @media #{$mq-medium} {
+            font-size: 2.7rem;
+        }
+    }
+
+    p {
+        margin: .75rem 0 2.5rem 0;       
+    }
+}

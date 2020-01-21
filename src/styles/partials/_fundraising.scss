@@ -5,10 +5,15 @@
         text-transform: uppercase;
         font-family: $body-font;
         color: $darkNeutral;
-    }  
+    }
     
     p {
         text-align: center;
+        margin-bottom: 2rem;
+
+        @media #{$mq-medium} {
+            margin-bottom: 0;
+        }
     }
 
     .flex-container {

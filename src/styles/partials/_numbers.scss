@@ -1,32 +1,56 @@
 .numbers-section {    
     margin-top: 3rem;
+    position: relative;
 
     @media #{$mq-medium} {
         margin-top: 6.875rem;
     }
 
-    &.image-right {
-        background-image: url('../images/stairs-icon.png');
-        width: 100%;
-        background-position: bottom right;
-        background-repeat: no-repeat;
+    .stairs-icon {
+        display: block;
+
+        @media #{$mq-medium} {
+            position: absolute;
+            top: -.5rem;
+            right: -2rem;
+            width: 175px;
+        }
+    }
+
+    .smiles-icon {
+        position: absolute;
+        top: 1.5rem;
+        left: 15.5rem;
+        width: 160px;
+    }
+}
+
+.stairs {
+    max-width: 80%;
+
+    @media #{$mq-medium} {
+        max-width: 100%;
     }
 }
 
 .numbers-section__number {
     color: $secondary;
     font-size:3.5rem;
+    font-family: $heading-font;
+    font-weight: 500;
 
-    @media #{$mq-medium} {
-        font-size: 5.3125rem;
+    @media #{$mq-small} {
+        font-size: 5.35rem;
     }
 }
 
 .numbers-section__caption {
     color: #fff;
     font-size: 1.75rem;
+    font-family: $heading-font;
+    font-weight: 500;
 
-    @media #{$mq-medium} {
-        font-size: 2.3125rem
+    @media #{$mq-small} {
+        font-size: 2rem;
     }
 }

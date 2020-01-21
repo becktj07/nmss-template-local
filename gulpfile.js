@@ -14,7 +14,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('compress-js', function() {
-  gulp.src(['src/scripts/**/*.js', '!src/scripts/**/*min.js'])
+  gulp.src(['src/scripts/*.js', '!src/scripts/*min.js'])
     .pipe(minify({
       ext:{
         src: '-debug.js',
@@ -40,11 +40,12 @@ gulp.task('compress-css', function() {
 });
 
 gulp.task('move', ['compress-css', 'compress-js'], function() {
+  //to do: minify css and send to dist
   gulp.src('src/styles/*.css')
     .pipe(gulp.dest('dist/styles'))
-  gulp.src('src/scripts/**/*.min.js')
+  gulp.src('src/scripts/*.min.js')
     .pipe(gulp.dest('dist/scripts'))
-  gulp.src('src/**/*.html')
+  gulp.src('src/*.html')
     .pipe(gulp.dest('dist/'))
 });
 
@@ -60,9 +61,9 @@ gulp.task('serve', ['build'], function () {
 
   gulp.watch('src/**/*.scss', ['move']);
 
-  gulp.watch('src/**/*.js', ['move']);
+  gulp.watch('src/*.js', ['move']);
 
-  gulp.watch('src/**/*.html', ['move']);
+  gulp.watch('src/*.html', ['move']);
 
   // protip: stop old version of gulp watch from running when you modify the gulpfile
   gulp.watch('gulpfile.js').on('change', () => process.exit(0)); 

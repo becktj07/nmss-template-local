@@ -2,8 +2,8 @@
     @extend .container;
     position: relative;
     max-width: 1200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .header__logo-container {
@@ -53,18 +53,18 @@
     
     @media #{$mq-medium} {
         float: right;
-        width: 300px;
+        width: 15rem;
     }
 }
 
 .header__fundraise {
     display: inline-block;
-    padding: 10px;
+    padding: .75rem;
     
     @media #{$mq-medium} {
-        margin: 40px 40px 0 0;
+        margin: 1.75rem 0 0 0;
         display: inline-block;
-        padding: 0px;
+        padding: 0;
     }
 
     a {
@@ -81,11 +81,11 @@
     z-index: 999;
     cursor: pointer;
     float: right;
-    width: 35px;
-    height: 40px;
+    width: 2rem;
+    height: 1.2rem;
 
     @media #{$mq-medium} {
-        margin-top: 25px;
+        margin-top: 1rem;
     }
 }
 
@@ -127,7 +127,7 @@
     transition: all .25s ease-in-out;
 
     @media #{$mq-medium} {
-        height: 660px;
+        height: 647px;
     }
 
     ul {

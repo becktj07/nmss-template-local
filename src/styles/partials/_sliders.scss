@@ -114,6 +114,8 @@
     background-color: $secondary;
     color: #fff;
     z-index: 99;
+    padding: 1.5rem 3rem;
+    height: 9.375rem;
 
     @media #{$mq-large} {
         display: none;
@@ -123,38 +125,12 @@
 .slide-overlay--mobile-top {
     @extend .slide-overlay--mobile;
     text-transform: uppercase;
-    padding: 1.5rem 1.5rem 1.5rem 8rem;
-    position: relative;
-
-    &:after {
-        content: '';
-        position: absolute;
-        background-image: url('../images/mobile-slider-top.png');
-        right: 0;
-        top: -1px;
-        width: 51px;
-        height: 70px;
-        background-size: 100%;
-    }
+    font-size: 1.5rem;    
 }
 
 .slide-overlay--mobile-bottom {
     @extend .slide-overlay--mobile;
-    text-transform: uppercase;
-    padding: 1.5rem 1.5rem 1.5rem 5rem;
-    position: relative;
-    width: 100%;
-
-    &:before {
-        content: '';
-        position: absolute;
-        background-image: url('../images/mobile-slider-bottom.png');
-        left: 0;
-        top: -1px;
-        width: 51px;
-        height: 69px;
-        background-size: 100%;
-    }
+    font-size: 1.3rem;
 }
 
 //desktop 
@@ -164,6 +140,7 @@
     background-color: $secondary;
     color: #fff;
     z-index: 99;
+    max-width: 50%;
 
     @media #{$mq-large} {
         display: block;
@@ -177,7 +154,7 @@
     padding: 1.5rem 1.5rem 1.5rem 3rem;
     position: absolute;
     top: 0;
-    left: -30px;
+    left: 0;
 }
 
 .slide-overlay--bottom {
@@ -185,7 +162,7 @@
     padding: 1.5rem 3rem 1.5rem 1.5rem;
     position: absolute;
     bottom: 0;
-    right: -30px;
+    right: 0;
 }
 
 .slider--multiple {

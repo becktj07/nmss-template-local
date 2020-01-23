@@ -17,7 +17,7 @@
 }
 
 .footer__ms-logo {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
     img {
         display: block;
@@ -27,7 +27,7 @@
 
     @media #{$mq-medium} {
         margin: 0;
-        padding-top: 15px;
+        padding-top: 3.2rem;
     }
 }
 
@@ -63,7 +63,7 @@
 
             a {
                 color: #fff;
-                padding: 0px 12px;
+                padding: 0px .75rem;
                 font-size: 1.15rem;
 
                 &:hover {

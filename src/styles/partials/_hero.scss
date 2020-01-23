@@ -1,4 +1,4 @@
-.hero-container {
+.hero-container--desktop {
     display: flex;
     height: 300px;
     width: calc(100% + 150px);
@@ -24,7 +24,7 @@
 
     @media #{$mq-large} {
         height: 350px;
-        top: 110px;
+        top: 98px;
     }    
 
     @media #{$mq-large} {
@@ -48,42 +48,24 @@
         display: block;
         max-width: 100%;
     }
-
-    // h1 {
-    //     color: $primary;
-    //     text-align: center;
-    //     font-size: 170px;
-    //     font-family: $heading-font-bold;
-    //     text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
-
-    //     span {
-    //         font-family: $body-font;
-    //         font-weight: 400;
-    //         display: inline-block;
-    //         font-size: 55px;
-    //         color: #fff;
-    //         text-align: left;
-    //     }
-    // }
 }
 
 .slider {
     @include negSkew;
     overflow: hidden;
     z-index: 1;
-    filter: grayscale(100%);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1 1 33.3%;
-    transition: flex-basis .25s ease-in-out;
+    transition: all .25s ease-in-out;
     text-align: center;
 
     &:hover {
-        flex-basis: 80%;
-        filter: grayscale(0);
+        flex-basis: 80%;        
+        transition: all .25s ease-in-out;
 
         @media #{$mq-large} {
             .slider__event-details {
@@ -95,18 +77,43 @@
                 @include horizontalCenter;
             }
         }
+
+        &:after {
+            filter: grayscale(0) brightness(100%);
+        }
     }
 
     &:after {
         z-index: -1;
         position: absolute;
-        content: '';
-        background-image: url(https://theheathhouse.co.uk/wp-content/uploads/2017/01/HH-Open-Day-055-1400x550.jpg);
+        content: '';        
         background-size: cover;
-        background-position:center;
+        background-position: top;
+        background-repeat: no-repeat;
         width: 130%;
         height: 100%;
         @include skew;
+        filter: grayscale(100%) brightness(50%);
+    }
+}
+
+.slider-1 {
+
+    &:after {
+        background-image: url('../images/boston-slider.jpg');
+    }
+}
+
+.slider-2 {
+    &:after {
+        background-image: url('../images/nyc-slider.jpg');
+    }
+}
+
+.slider-3 {
+    &:after {
+        background-image: url('../images/sf-slider.jpg');
+        background-position: top center;
     }
 }
 

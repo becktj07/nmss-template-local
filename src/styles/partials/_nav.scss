@@ -2,21 +2,29 @@
     @extend .container;
     position: relative;
     max-width: 1200px;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    @media #{$mq-large} {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
 }
 
 .header__logo-container {
     display: block;
 
     img {
-        width: 300px;
-        margin: 0 auto;
+        width: 200px;
+        margin: 0;
         display: block;
+
+        @media #{$mq-small} {
+            width: 250px;
+        }   
 
         @media #{$mq-medium} {
             display: inline-block;
-            width: 300px;
         }    
     }
 
@@ -27,16 +35,26 @@
 
 .header__banner {
     position: absolute;
-    bottom: -60px;
+    bottom: -25px;
     background-color: $darkNeutral;
-    padding: 10px 20px;
+    padding: 5px 20px;
     z-index: 9;
     transform: skew(-13deg, 0deg);
-    width: 90%;
+    font-size: .75rem;
 
-    @media #{$mq-medium} {
-        bottom: -40px;
-        width: auto;
+    @media #{$mq-small} {       
+        bottom: -30px;
+        display: block;
+        font-size: 1rem;
+    }
+
+    @media #{$mq-medium} {       
+        bottom: -40px; 
+        padding: 10px 20px;
+    }
+
+    @media #{$mq-large} {        
+
     }
 
     h3 {

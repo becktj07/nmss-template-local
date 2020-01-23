@@ -29,6 +29,7 @@ $('.slider--multiple').slick({
     ]
 });
 
+//Desktop
 $('.slider-1').hover(function() {
   $('.location-1').addClass('hide');
   $('.location-2').addClass('location-hover');
@@ -59,8 +60,18 @@ $('.slider-3').hover(function() {
   $('.location-2').addClass('location-hover');
 });
 
-$('.slider-3').mouseleave(function() {
+$('.slider-3').mouseleave(function() { 
   $('.location-3').removeClass('hide');
   $('.location-1').removeClass('location-hover');
   $('.location-2').removeClass('location-hover');
+});
+
+//Mobile 
+$('#location-tab li').click(function(){
+  $('#location-tab li').removeClass('active');
+  $(this).addClass('active');
+  $('.hero-container--mobile__detail-container').addClass('visually-hidden');
+  var activeContent= $(this).find('a').attr('href');
+  $(activeContent).removeClass('visually-hidden');
+  return false
 });

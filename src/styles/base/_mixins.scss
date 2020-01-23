@@ -20,6 +20,13 @@
     -webkit-transform: translateX(-50%);
 }
 
+@mixin verticalCenter {
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
 @mixin flex {
     display: -webkit-box;
     display: -moz-box;

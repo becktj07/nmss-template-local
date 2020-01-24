@@ -86,8 +86,10 @@
     }
 }
 
-.location-link.active {
-    color: $lightSecondary;
+li.active {
+    a {
+        color: $lightSecondary;
+    }
 }
 
 .hero-container--desktop {

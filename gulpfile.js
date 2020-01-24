@@ -35,6 +35,7 @@ gulp.task('compress-css', function() {
       console.log('Style problem: ' + error);
     })
     .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(minify())
     .pipe(gulp.dest('dist/styles'))
     .pipe(reload({stream: true}));
 });
@@ -61,7 +62,7 @@ gulp.task('serve', ['build'], function () {
 
   gulp.watch('src/**/*.scss', ['move']);
 
-  gulp.watch('src/*.js', ['move']);
+  gulp.watch('src/**/*.js', ['move']);
 
   gulp.watch('src/*.html', ['move']);
 

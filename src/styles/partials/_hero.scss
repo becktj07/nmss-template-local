@@ -34,10 +34,6 @@
         @media #{$mq-small} {
             width: 50%;
         }
-
-        @media #{$mq-medium} {
-            width: 30%;
-        }
     }
 
     .slider__event-details {
@@ -88,7 +84,7 @@
 
 li.active {
     a {
-        color: $lightSecondary;
+        color: #02def1;
     }
 }
 
@@ -115,7 +111,7 @@ li.active {
     @media #{$mq-large} {
         display: block;
         height: 400px;
-        top: 98px;
+        top: 88px;
     }   
 }
 
@@ -223,6 +219,8 @@ li.active {
     }
     
     @media #{$mq-large} {
+        width: 85%;
+        left: 55%;
         display: block;
     }
 

@@ -33,11 +33,11 @@
 		<nav class="nav">
 			<div class="hamburger-close">&times;</div>
 			<ul class="nav__link-list">
-				<li><a href="/boston">Boston <span>200 Clarendon Tower</span></a></li>
-				<li><a href="/boston">NYC <span>One Bryant Place</span></a></li>
-				<li><a href="/boston">San Fran<span>Salesforce Tower</span></a></li>
-				<li><a href="/boston">Donate<span>to a climber or a team</span></a></li>
-				<li><a href="/boston">Log In<span>to Fundraise</span></a></li>
+				<li><a href="#boston-detail">Boston <span>200 Clarendon Tower</span></a></li>
+				<li><a href="#nyc-detail">NYC <span>One Bryant Place</span></a></li>
+				<li><a href="#sf-detail">San Fran<span>Salesforce Tower</span></a></li>
+				<li><a href="#donate">Donate<span>to a climber or a team</span></a></li>
+				<li><a href="#">Log In<span>to Fundraise</span></a></li>
 			</ul>
 		</nav>
 		<main> 
@@ -84,46 +84,41 @@
 			</div>			
 
 			<section class="hero-container--desktop">
-				<div class="slider slider-1">
-					<a href="#">
-						<h2 class="slider__event-location location-1"><span>//</span>Boston</h2>
-						<div class="slider__event-details">
-							<h2>Boston</h2>
-							<h3>May 16 // SalesForce Tower // 61 Flights</h3>
-							<h4>Eight to ten words about the climb</h4>
-						</div>
-					</a>
+				<div class="slider slider-1">					
+					<h2 class="slider__event-location location-1"><span>//</span>Boston</h2>
+					<div class="slider__event-details">
+						<h2>Boston</h2>
+						<h3>May 16 // SalesForce Tower // 61 Flights</h3>
+						<h4>Eight to ten words about the climb</h4>
+					</div>					
 				</div>
-				<div class="slider slider-2">
-					<a href="#">
+				<div class="slider slider-2">					
 						<h2 class="slider__event-location location-2"><span>//</span>New York</h2>
 						<div class="slider__event-details">
 							<h2>New York</h2>
 							<h3>May 16 // SalesForce Tower // 61 Flights</h3>
 							<h4>Eight to ten words about the climb</h4>
-						</div>
-					</a>
+						</div>					
 				</div>
-				<div class="slider slider-3">
-					<a href="#">
-						<h2 class="slider__event-location location-3"><span>//</span>San Francisco</h2>
-						<div class="slider__event-details">
-							<h2>San Francisco</h2>
-							<h3>May 16 // SalesForce Tower // 61 Flights</h3>
-							<h4>Eight to ten words about the climb</h4>
-						</div>
-					</a>
+				<div class="slider slider-3">					
+					<h2 class="slider__event-location location-3"><span>//</span>San Francisco</h2>
+					<div class="slider__event-details">
+						<h2>San Francisco</h2>
+						<h3>May 16 // SalesForce Tower // 61 Flights</h3>
+						<h4>Eight to ten words about the climb</h4>
+					</div>					
 				</div>
 			</section>
 			<section class="container padding-top-bottom--70">
 				<h1 class="heading--70 primary">Ditch the</h1>
 				<h1 class="heading--80 primary">Elevator</h1>
-				<p>and get ready to smash those stairs. Climb to the Top is a vertical 5K* that’s keeping thighs burning on both coasts in some of the tallest and most iconic buildings around. These stair climb events are not only a total blast, but an impactful way to raise funds to change the world for the nearly 1 million people living with MS in the United States.</p>
+				<p>and get ready to smash those stairs. Climb to the Top is a <b>vertical 5K*</b> that’s keeping thighs burning on both coasts in some of the tallest and most iconic buildings around. 
+					These stair climb events are not only a total blast, but an impactful way to <b>raise funds to change the world</b> for the nearly <b>1 million people living with MS</b> in the United States.</p>
 				<h2 class="heading--50 padding-top--50 secondary">You ready to get this party started?</h2>
-				<p>Find one of our incredible events below for more information. These fill up quickly, so get your registration completed to reserve your place in the stairwell.</p>
+				<p>Find one of our <b>incredible events</b> below for more information. These fill up quickly, so get your registration completed to reserve your place in the stairwell.</p>
 				<h2 class="heading--50 padding-top--50 secondary">Competitive tower runner?</h2>
-				<p>You’d better believe we have a division for you at each of our events!</p>
-				<p>*Train like you’re training for a 5K. An actual vertical 5K would be epic, but no one has built a building that tall…yet.</p>
+				<p>You’d better believe we have a <b>division for you</b> at each of our events!</p>
+				<p>*Train like you’re training for a 5K. An actual vertical 5K would be epic, but no one has built a building that tall…<b>yet.</b></p>
 			</section>
 			<section class="gray-background padding-top-bottom--30">
 				<div class="container">
@@ -145,6 +140,24 @@
 							</div>
 						</div>					
 					</div>				
+				</div>
+			</section>
+			<section id="donate" class="donate-form container padding-top--50 padding-bottom--50">
+				<h2>Donate</h2>
+				<p>to a climber or team today</p>
+				<div class="donate-form__form">
+					<h3>Find a Participant</h3>
+					<div class="donate-form__submit-container">
+						<input type="text" name="firstName" placeholder="First Name"/>
+						<input type="text" name="lastName" placeholder="Last Name" style="margin-bottom: 2.5rem;" />
+						<submit></submit>
+					</div>
+					 
+					 <h3>Find a Team</h3>
+					 <div class="donate-form__submit-container">
+						<input type="text" name="teamName" placeholder="Team Name"/>
+						<submit></submit>
+					 </div>
 				</div>
 			</section>
 			<section class="container--1200--no-padding padding-top-bottom--70">
@@ -185,17 +198,20 @@
 				<h1 class="heading--70 primary">The</h1>
 				<h1 class="heading--80 primary">Buildings</h1>
 
-				<img src="http://placehold.it/510x530" alt="building name" />
+				<div id="boston-detail"></div>
+				<img src="../images/boston-detail.jpg" alt="building name" />
 				<h2 class="heading--44 secondary">Boston</h2>
 				<h2 class="building-name">// 200 Clarendon</h2>
 				<p>Find one of our incredible events below for more information. These fill up quickly, so get your registration completed to reserve your place in the stairwell.</p>
 
-				<img src="http://placehold.it/510x530" alt="building name" />
+				<div id="nyc-detail"></div>
+				<img src="../images/nyc-detail.jpg" alt="building name" />
 				<h2 class="heading--44 secondary">New York City</h2>
 				<h2 class="building-name">// One Braynt Place</h2>
 				<p>Find one of our incredible events below for more information. These fill up quickly, so get your registration completed to reserve your place in the stairwell.</p>
 				
-				<img src="http://placehold.it/510x530" alt="building name" />
+				<div id="sf-detail"></div>
+				<img src="../images/sf-detail.jpg" alt="building name" />
 				<h2 class="heading--44 secondary">San Franscisco</h2>
 				<h2 class="building-name--sf">// Salesforce Tower</h2>
 				<p>Find one of our incredible events below for more information. These fill up quickly, so get your registration completed to reserve your place in the stairwell.</p>									
@@ -317,15 +333,15 @@
 			<div class="container--1200">
 				<div class="footer__link-list">
 					<ul>
-						<li><a href="">test</a></li>
-						<li><a href="">test</a></li>
-						<li><a href="">test</a></li>
-						<li><a href="">test</a></li>
-						<li><a href="">test</a></li>
-						<li><a href="">test</a></li>
+						<li><a href="https://www.nationalmssociety.org/" target="_blank" rel="noopener">National MS Society</a></li>
+						<li><a href="#" target="_blank" rel="noopener">About Us</a></li>
+						<li><a href="#" target="_blank" rel="noopener">Privacy Policy</a></li>
+						<li><a href="#" target="_blank" rel="noopener">Waiver</a></li>						
+						<li><a href="https://www.nationalmssociety.org/Helpful-Links/Contact-Us" target="_blank" rel="noopener">Contact Us</a></li>
+						<li><a href="tel:1-888-3721-331">1-888-3721-331</a></li>
 					</ul>
 				</div>
-				<h5 class="text-center">Tax exempt organization</h5>
+				<h5 class="text-center">The National Multiple Sclerosis Scoiety is a qualified 501(c)(3) tax exempt-organization.</h5>
 			</div>			
 		</footer>
 		<script src="scripts/number-animator.min.js"></script>

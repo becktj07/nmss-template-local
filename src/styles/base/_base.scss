@@ -305,8 +305,7 @@ input, textarea {
     padding: 15px;
     font-size: 1.250rem;
     border-radius: 5px;
-    font-weight: 600;
-    border: none;
+    font-weight: 600;    
 
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         /* stop field zoom on iOS */
@@ -320,7 +319,6 @@ select::-ms-expand {
 }
 
 submit {
-    @extend .btn;
     cursor: pointer;
 }
 

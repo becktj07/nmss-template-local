@@ -92,7 +92,8 @@
             background-image: url('../images/arrow-left-white.png');
             width:60px;
             height:60px;
-            background-size: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 
@@ -111,7 +112,8 @@
             background-image: url('../images/arrow-right-white.png');
             width:60px;
             height:60px;
-            background-size: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }

@@ -124,21 +124,29 @@
 				<div class="container">
 					<div class="slider--tall">
 						<div class="slider--tall__slide">
-							<img src="https://placehold.it/550x600" />
+							<img src="../images/city-slider-nyc.jpg" />
 							<div class="slider--tall__text-container">
 								<h3 class="heading--44 primary text-center">The NYC Climb</h3>
 								<p class="white text-center">Lorem ipsum</p>
-									<a class="btn">Get Vertical!</a>
+									<a class="btn" href="https://secure.nationalmssociety.org/site/TR?fr_id=30913&pg=entry">Get Vertical!</a>
 							</div>
 						</div>
 						<div class="slider--tall__slide">
-							<img src="https://placehold.it/550x600" />
+							<img src="https://placehold.it/515x615" />
 							<div class="slider--tall__text-container">
 								<h3 class="heading--44 primary text-center">Boston</h3>
 								<p class="white text-center">Lorem ipsum</p>
-									<a class="btn">Get Vertical!</a>
+									<a class="btn" href="https://secure.nationalmssociety.org/site/TR?fr_id=30912&pg=entry">Get Vertical!</a>
 							</div>
-						</div>					
+						</div>	
+						<div class="slider--tall__slide">
+								<img src="https://placehold.it/515x615" />
+							<div class="slider--tall__text-container">
+								<h3 class="heading--44 primary text-center">San Francisco</h3>
+								<p class="white text-center">Lorem ipsum</p>
+									<a class="btn" href="https://secure.nationalmssociety.org/site/TR?fr_id=30914&pg=entry">Get Vertical!</a>
+							</div>
+						</div>											
 					</div>				
 				</div>
 			</section>
@@ -148,15 +156,15 @@
 				<div class="donate-form__form">
 					<h3>Find a Participant</h3>
 					<div class="donate-form__submit-container">
-						<input type="text" name="firstName" placeholder="First Name"/>
-						<input type="text" name="lastName" placeholder="Last Name" style="margin-bottom: 2.5rem;" />
-						<submit></submit>
+						<input type="text" name="firstName" id="firstName" placeholder="First Name" />
+						<input type="text" name="lastName" id="lastName" placeholder="Last Name" style="margin-bottom: 2.5rem;" />
+						<submit id="nameSubmitButton"></submit>
 					</div>
 					 
 					 <h3>Find a Team</h3>
 					 <div class="donate-form__submit-container">
-						<input type="text" name="teamName" placeholder="Team Name"/>
-						<submit></submit>
+						<input type="text" name="teamName" id="teamName" placeholder="Team Name" />
+						<submit id="teamSubmitButton"></submit>
 					 </div>
 				</div>
 			</section>
@@ -164,32 +172,33 @@
 				<div class="slider--overlays">					
 					<div class="slider--overlays__slide">
 						<div class="slide-overlay--mobile-top">
-							<span>The em unit is relative to the font-size of the parent, which causes the compounding issue.</span> 
+							<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span> 
 						</div>
 						<div class="slide-overlay--top">
-							<span>overlay top Don't just take our word for it. Climb to the top is</span>
+								<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span>
 						</div>
 						<img src="https://placehold.it/1200x700" />
 						<div class="slide-overlay--bottom">
-							<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span>
+							<span>"I was diagnosed with MS in 2017. This inspired me to get back into shape and kck MS in the butt!" <br>~ Christine</span>
 						</div>
 						<div class="slide-overlay--mobile-bottom">
-							<span>test</span>
+							<span>"I was diagnosed with MS in 2017. This inspired me to get back into shape and kck MS in the butt!" <br>~ Christine</span>
 						</div>
 					</div>
+					<!-- //slide 2 -->
 					<div class="slider--overlays__slide">
 						<div class="slide-overlay--mobile-top">
-							<span>mobile top</span> 
+							<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span> 
 						</div>
 						<div class="slide-overlay--top">
-							<span>overlay top</span>
+								<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span>
 						</div>
 						<img src="https://placehold.it/1200x700" />
 						<div class="slide-overlay--bottom">
-							<span>Don't just take our word for it. Climb to the top is <b>awesome!</b></span>
+							<span>"I was diagnosed with MS in 2017. This inspired me to get back into shape and kck MS in the butt!" <br>~ Christine</span>
 						</div>
 						<div class="slide-overlay--mobile-bottom">
-							<span>test</span>
+							<span>"I was diagnosed with MS in 2017. This inspired me to get back into shape and kck MS in the butt!" <br>~ Christine</span>
 						</div>
 					</div>
 				</div>				
@@ -323,11 +332,12 @@
 				</div>				
 				<div class="footer__event-logos">
 					<span>Join us for one of our other events!</span>
-					<img src="https://placehold.it/80x80" />
-					<img src="https://placehold.it/80x80" />
-					<img src="https://placehold.it/80x80" />
-					<img src="https://placehold.it/80x80" />
-					<img src="https://placehold.it/80x80" />					
+					<img src="../images/bike-ms-thumb.png" alt="bike ms" />
+					<img src="../images/walk-ms-thumb.png" alt="walk ms" />
+					<img src="../images/challenge-walk-ms-thumb.png" alt="challenge walk ms" />
+					<img src="../images/finish-ms-thumb.png" alt="finish ms" />
+					<img src="../images/muck-fest-ms-thumb.png" alt="muck fest ms" />
+					<img src="../images/diy-ms-thumb.png" alt="diy ms" />					
 				</div>
 			</div>
 			<div class="container--1200">
@@ -346,6 +356,7 @@
 		</footer>
 		<script src="scripts/number-animator.min.js"></script>
 		<script src="scripts/nav.min.js"></script>
+		<script src="scripts/donateForm.min.js"></script>
 		<script src="scripts/slick.min.js"></script>
 		<script src="scripts/sliders.min.js"></script>
 	</body>
